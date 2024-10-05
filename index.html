@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEN cega-rest Library</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Script -->
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      function scrollToBottom() {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      }
+      function scrollToPosition1() {
+        window.scrollTo({ top: 1000, behavior: "smooth" });
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Xcega-<span>rest</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home" onclick="scrollToTop()">Home</a>
+        <a href="#pilih" onclick="scrollToTop()">Menu</a>
+        <a href="#project" onclick="showAlert2()">Karya Kami</a>
+        <a href="#socials" onclick="scrollToBottom()">Social Media</a>
+      </div>
+      <!-- 
+      <div class="dropdown">
+        <button class="dropbtn">Our Documentation</button>
+        <div class="dropdown-content">
+          <a href="#contact" onclick="scrollToPosition1()">Day 1</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 2</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 3</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 4</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 5</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 6</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 7</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 8</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 9</a>
+          <a href="#contact" onclick="scrollToBottom()">Day 10</a>
+        </div>
+      </div>
+ -->
+      <div class="navbar-extra">
+        <a href="#" id="smile" onclick="showAlert1()"
+          ><i data-feather="smile"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1 id="text1">Are you ready for <span>amazing journey?</span></h1>
+        <a href="#about" class="cta" id="cta">Let's Start!</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2 id="scrolldown">SCROLL <span>DOWN</span></h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/minggu.png" alt="day1" />
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Pilih Pekan start -->
+    <section class="minggu" id="pilih">
+      <main>
+        <a href="index1.html">Minggu Pertama</a>
+        <a href="index2.html">Minggu Kedua</a>
+      </main>
+    </section>
+    <!-- Pilih Pekan end -->
+
+    <!-- Blur Green start -->
+    <section id="blurgreen" class="blurgreen">
+      <div class="row">
+        <div class="about-img">
+          <img src="img/blurgreen.png" alt="blurgreen" />
+        </div>
+      </div>
+    </section>
+    <!-- Blur Green end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/xcega.rest"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/@XCEGA-REST"
+          ><i data-feather="youtube"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="#home" onclick="scrollToTop()">Home</a>
+        <a href="#about">Menu</a>
+        <a href="#project" onclick="showAlert2()">Karya Kami</a>
+        <a href="#contact">Social Media</a>
+      </div>
+
+      <div class="credit">
+        <p>
+          Created by <a href="#home">Tim IT X.C</a>
+          | &copy; 2024
+        </p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <script>
+      function showAlert() {
+        alert("Mohon Maap, Fitur Ini Belum Tersedia. Tunggu Updatenya Yaaa!!!");
+      }
+      function showAlert1() {
+        alert("TERIMA KASIH TELAH BERKUNJUNG :)");
+      }
+      function showAlert2() {
+        alert("Belum tersedia. Mohon tunggu yaa!");
+      }
+    </script>
+  </body>
+</html>
